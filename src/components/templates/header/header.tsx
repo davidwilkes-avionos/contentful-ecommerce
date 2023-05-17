@@ -2,8 +2,8 @@ import { Box, BoxProps, Flex } from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 
-import MobileLogo from '@icons/android-chrome-512x512.png';
 import DesktopLogo from '@icons/2.png';
+import MobileLogo from '@icons/android-chrome-512x512.png';
 import { LanguageSelector } from '@src/components/features/language-selector';
 
 export const HEADER_HEIGHT = 60;
@@ -20,7 +20,8 @@ export const Header = (props: BoxProps) => {
       pr={{ base: 4, md: 12, lg: 12 }}
       height={`${HEADER_HEIGHT}px`}
       zIndex="2"
-      {...props}>
+      {...props}
+    >
       <Link href="/" title={t('common.homepage')}>
         <Box
           display={{ base: 'none', md: 'block', lg: 'block' }}
