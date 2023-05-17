@@ -24,7 +24,7 @@ export const Header = (props: BoxProps) => {
     >
       <Link href="/" title={t('common.homepage')}>
         <Box
-          display={{ base: 'none', md: 'block', lg: 'block' }}
+          display={{ base: 'block', md: 'none', lg: 'none' }}
           as={DesktopLogo}
           title={t('common.logoImageAltText')}
         />
